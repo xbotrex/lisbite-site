@@ -3,145 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="LISBITE is an independent game studio building tense, system-driven games." />
-  <meta name="theme-color" content="#09070f" />
+  <meta name="description" content="LISBITE is an independent game studio building atmospheric, system-driven games around chaos, tension, and survival." />
+  <meta name="theme-color" content="#04030a" />
   <title>LISBITE | Indie Game Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="LISBITE home">
-      <span class="brand-mark">L</span>
-      <span>LISBITE</span>
-    </a>
-
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="LISBITE home"><span class="brand-mark">L</span><span>LISBITE</span></a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#games">Games</a>
-      <a href="#studio">Studio</a>
-      <a href="#updates">Updates</a>
-      <a href="#contact">Contact</a>
+      <a class="active" href="/">Home</a>
+      <a href="/games/">Games</a>
+      <a href="/studio/">Studio</a>
+      <a href="/updates/">Updates</a>
+      <a href="/contact/">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section-pad">
-      <div class="hero-copy">
+  <main class="wrap">
+    <section class="hero">
+      <div>
         <p class="eyebrow">Independent game studio</p>
-        <h1>Games built around chaos, tension, and survival.</h1>
-        <p class="hero-text">
-          LISBITE is a small indie studio focused on making atmospheric games with strong systems, strange worlds, and memorable moments.
-        </p>
+        <h1>Worlds built on pressure.</h1>
+        <p class="hero-text">LISBITE makes atmospheric games about unstable places, strange systems, and moments where everything starts falling apart.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#games">View projects</a>
-          <a class="button secondary" href="#contact">Contact</a>
+          <a class="button primary" href="/games/">View projects</a>
+          <a class="button secondary" href="/studio/">About the studio</a>
         </div>
       </div>
 
-      <div class="hero-card" aria-label="Featured project card">
-        <div class="card-glow"></div>
-        <p class="tag">In development</p>
-        <h2>Natural Disaster Project</h2>
-        <p>
-          A prototype focused on destruction, survival, and reacting fast when the world starts falling apart.
-        </p>
+      <aside class="orbit-card" aria-label="Featured project">
+        <span class="star s1"></span><span class="star s2"></span><span class="star s3"></span><span class="star s4"></span><span class="star s5"></span>
+        <div class="card-content">
+          <p class="tag">In development</p>
+          <h2>Natural Disaster Project</h2>
+          <p>A survival prototype focused on destruction, panic, and reacting fast when the environment turns against you.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-pad-small">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Direction</p>
+          <h2>Cosmic, ruined, industrial.</h2>
+        </div>
+        <p>The site direction uses purple starfields, theatrical darkness, distant ruins, and cramped industrial structures. It is inspired by mood, not copied imagery.</p>
+      </div>
+      <div class="grid three">
+        <article class="panel"><p class="tag">Atmosphere</p><h3>Dreamlike darkness</h3><p>Heavy contrast, glowing colour, stars, haze, and a slightly unreal theatrical mood.</p></article>
+        <article class="panel"><p class="tag">Worlds</p><h3>Lonely scale</h3><p>Towers, ruins, and distant spaces that make the player feel small.</p></article>
+        <article class="panel"><p class="tag">Gameplay</p><h3>Pressure systems</h3><p>Unstable spaces, disasters, survival decisions, and systemic chaos.</p></article>
       </div>
     </section>
 
-    <section class="section section-pad" id="games">
-      <div class="section-heading">
-        <p class="eyebrow">Projects</p>
-        <h2>Games</h2>
+    <section class="section-pad-small">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2>Current work.</h2>
+        </div>
+        <a class="button secondary" href="/games/">All games</a>
       </div>
-
-      <div class="project-grid">
-        <article class="project-card featured">
-          <div>
-            <p class="tag">Current prototype</p>
-            <h3>Natural Disaster Game</h3>
-            <p>
-              Survive destructive disasters alone or with friends. Built around panic, physics, teamwork, and quick decisions.
-            </p>
-          </div>
-          <a class="text-link" href="#contact">Follow development</a>
+      <div class="grid two">
+        <article class="project-card tall industrial">
+          <p class="tag">Current prototype</p>
+          <h3>Natural Disaster Game</h3>
+          <p>Survive collapsing environments with quick decisions, movement, and teamwork.</p>
+          <a class="text-link" href="/games/">Read more</a>
         </article>
-
-        <article class="project-card">
+        <article class="project-card desolate">
           <p class="tag">Early work</p>
           <h3>Parkour Prototype</h3>
-          <p>
-            A rough movement prototype used to test speed, flow, and player control.
-          </p>
-        </article>
-
-        <article class="project-card muted">
-          <p class="tag">Future slot</p>
-          <h3>Unannounced</h3>
-          <p>
-            This space can be replaced with your next project, demo, Steam page, or itch.io link.
-          </p>
+          <p>A movement test used to explore speed, flow, and first-person traversal.</p>
         </article>
       </div>
-    </section>
-
-    <section class="section section-pad split" id="studio">
-      <div>
-        <p class="eyebrow">Studio</p>
-        <h2>What LISBITE is about</h2>
-      </div>
-      <div class="copy-stack">
-        <p>
-          LISBITE makes indie games that feel dangerous, cinematic, and reactive. The goal is to build games where players can create their own stories through systems rather than only following scripted moments.
-        </p>
-        <p>
-          The studio is currently in its early stage, focused on prototypes, visual direction, and building a strong first release.
-        </p>
-      </div>
-    </section>
-
-    <section class="section section-pad" id="updates">
-      <div class="section-heading">
-        <p class="eyebrow">Development</p>
-        <h2>Updates</h2>
-      </div>
-
-      <div class="updates-list">
-        <article>
-          <time datetime="2026-06-30">30 June 2026</time>
-          <h3>Studio website started</h3>
-          <p>LISBITE.com is being set up as the main home for projects, development updates, and contact details.</p>
-        </article>
-        <article>
-          <time datetime="2026-06-30">30 June 2026</time>
-          <h3>Natural disaster prototype in progress</h3>
-          <p>Early development is focused on destruction systems and making disasters feel dynamic.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-pad contact" id="contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Want to follow or contact LISBITE?</h2>
-      <p>
-        Add your email, YouTube, TikTok, Discord, itch.io, Steam, or GitHub links here once they are ready.
-      </p>
-      <a class="button primary" href="mailto:contact@lisbite.com">contact@lisbite.com</a>
     </section>
   </main>
 
   <footer class="footer">
     <p>© <span id="year"></span> LISBITE. All rights reserved.</p>
-    <a href="#top">Back to top</a>
+    <a href="/contact/">Contact</a>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>

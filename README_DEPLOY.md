@@ -1,53 +1,43 @@
-# LISBITE website deploy guide
+# LISBITE website v2
 
-This is a plain static website for GitHub Pages.
+This is a multi-page GitHub Pages version of the LISBITE site.
 
-## Files
+## Pages
 
-- `index.html` — website content
-- `styles.css` — visual design
-- `script.js` — mobile navigation and footer year
-- `CNAME` — tells GitHub Pages to use `lisbite.com`
-- `.nojekyll` — prevents GitHub from trying to process the site with Jekyll
+- `/` Home
+- `/games/` Games
+- `/studio/` Studio
+- `/updates/` Updates
+- `/contact/` Contact
 
-## Upload to GitHub
+## Files to upload
 
-1. Create a new public repository, for example `lisbite-site`.
-2. Upload all files in this folder to the repository root.
-3. Go to repository `Settings` → `Pages`.
-4. Set source to `Deploy from a branch`.
-5. Select branch `main` and folder `/root`.
-6. Save.
-7. Under `Custom domain`, enter `lisbite.com` and save.
-8. Once DNS is correct, enable `Enforce HTTPS`.
+Upload everything in this folder to the root of the GitHub repository:
 
-## DNS records for the domain
+- `index.html`
+- `styles.css`
+- `script.js`
+- `CNAME`
+- `.nojekyll`
+- `games/index.html`
+- `studio/index.html`
+- `updates/index.html`
+- `contact/index.html`
 
-At your domain registrar, set these records.
+Do not upload the zip file itself. Upload the contents.
 
-A records for the root/apex domain:
+## Editing
 
-| Type | Host | Value |
-| --- | --- | --- |
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
+- Text content is inside the `.html` files.
+- The visual design is inside `styles.css`.
+- The mobile menu and year are inside `script.js`.
 
-CNAME record for www:
+## Custom domain
 
-| Type | Host | Value |
-| --- | --- | --- |
-| CNAME | www | YOUR-GITHUB-USERNAME.github.io |
+The `CNAME` file contains:
 
-Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username.
+```txt
+lisbite.com
+```
 
-## Edit the site
-
-Replace placeholder text in `index.html`, especially:
-
-- project names
-- contact email
-- social links
-- descriptions
-- update posts
+Keep it if you want the site to stay connected to lisbite.com.

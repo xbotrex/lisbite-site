@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LISBITE games and prototypes." />
+  <meta name="theme-color" content="#04030a" />
+  <title>Games | LISBITE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-mark">L</span><span>LISBITE</span></a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/">Home</a><a class="active" href="/games/">Games</a><a href="/studio/">Studio</a><a href="/updates/">Updates</a><a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="section-pad">
+      <p class="eyebrow">Games</p>
+      <h1 class="page-title">Projects in the dark.</h1>
+      <p class="lead">A home for current prototypes, future demos, Steam pages, itch.io builds, devlogs, and trailers.</p>
+    </section>
+
+    <section class="section-pad-small">
+      <div class="grid two">
+        <article class="project-card tall industrial">
+          <p class="tag">In development</p>
+          <h3>Natural Disaster Game</h3>
+          <p>A survival prototype about destructive events, unstable buildings, and making decisions while the environment collapses around you.</p>
+          <div class="stat-row">
+            <div class="stat"><strong>Solo / co-op</strong><span>target style</span></div>
+            <div class="stat"><strong>Systems</strong><span>destruction focus</span></div>
+            <div class="stat"><strong>Prototype</strong><span>early stage</span></div>
+          </div>
+        </article>
+        <article class="project-card desolate">
+          <p class="tag">Early prototype</p>
+          <h3>Parkour Prototype</h3>
+          <p>A scrappy movement test for traversal, speed, momentum, and level flow. This can become a small archived project page later.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© <span id="year"></span> LISBITE.</p><a href="/contact/">Contact</a></footer>
+  <script src="/script.js"></script>
+</body>
+</html>
