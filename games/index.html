@@ -1,55 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="LISBITE games and prototypes." />
-  <meta name="theme-color" content="#04030a" />
-  <title>Games | LISBITE</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="stylesheet" href="/styles.css">
+
+<title>Games — LISBITE</title>
+<meta name="description" content="Games and game-development work from LISBITE.">
 </head>
 <body>
-  <div class="noise"></div>
-  <header class="site-header">
-    <a class="brand" href="/"><span class="brand-mark">L</span><span>LISBITE</span></a>
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="/">Home</a><a class="active" href="/games/">Games</a><a href="/studio/">Studio</a><a href="/updates/">Updates</a><a href="/contact/">Contact</a>
-    </nav>
+<nav class="wall-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/games/" aria-current="page">Games</a><a href="/projects/">Projects</a><a href="/logs/">Logs</a><a href="/contact/">Contact</a></nav>
+<main class="wall">
+  <header class="wall-title">
+    <span class="version">games wall</span>
+    <h1>GAMES</h1>
+    <p>projects, prototypes and unstable places</p>
   </header>
 
-  <main class="wrap">
-    <section class="section-pad">
-      <p class="eyebrow">Games</p>
-      <h1 class="page-title">Projects in the dark.</h1>
-      <p class="lead">A home for current prototypes, future demos, Steam pages, itch.io builds, devlogs, and trailers.</p>
-    </section>
+  <section class="paper taped" style="max-width:900px; margin:0 auto 120px;">
+    <span class="page-tag">in development</span>
+    <h2>Natural Disaster Project</h2>
+    <p>A heavily-inspired natural disaster survival game with a cool name which Szymon is too paranoid to reveal. Its currently in the prototype phase.</p>
+    <p>(It is a cool name I promise)</p>
+  </section>
 
-    <section class="section-pad-small">
-      <div class="grid two">
-        <article class="project-card tall industrial">
-          <p class="tag">In development</p>
-          <h3>Natural Disaster Game</h3>
-          <p>A survival prototype about destructive events, unstable buildings, and making decisions while the environment collapses around you.</p>
-          <div class="stat-row">
-            <div class="stat"><strong>Solo / co-op</strong><span>target style</span></div>
-            <div class="stat"><strong>Systems</strong><span>destruction focus</span></div>
-            <div class="stat"><strong>Prototype</strong><span>early stage</span></div>
-          </div>
-        </article>
-        <article class="project-card desolate">
-          <p class="tag">Early prototype</p>
-          <h3>Parkour Prototype</h3>
-          <p>A scrappy movement test for traversal, speed, momentum, and level flow. This can become a small archived project page later.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+  <section class="wall-row two">
+    <article class="paper pink-note">
+      <h2>The world</h2>
+      <p>Imagine large towers, distant space and shiny mythical colours.</p>
+      <p>Now imagine a dystopian society ruled by the devil or something. Still thinking about it.</p>
+    </article>
 
-  <footer class="footer"><p>© <span id="year"></span> LISBITE.</p><a href="/contact/">Contact</a></footer>
-  <script src="/script.js"></script>
+    <div class="slot landscape" data-slot="IMAGE"></div>
+  </section>
+
+  <section class="paper" style="max-width:960px; margin:0 auto 140px;">
+    <h2>Progress</h2>
+    <p>Here a video of the progress:</p>
+    <div class="slot landscape" data-slot="VIDEO"></div>
+  </section>
+
+  <section class="wall-row reverse">
+    <div class="slot landscape" data-slot="IMAGE"></div>
+
+    <article class="paper blue-note">
+      <span class="page-tag">released</span>
+      <h2>Office Shootout PROTOTYPE</h2>
+      <p>My first release outside of Scratch and Roblox.</p>
+      <a class="marker-link" href="https://xbotrex.itch.io/parkour-prototype" target="_blank" rel="noopener noreferrer">itch.io</a>
+    </article>
+  </section>
+
+  <section class="note-grid two" style="margin-bottom:130px;">
+    <article class="paper purple-note">
+      <h2>Scratch</h2>
+      <p>Older games and experiments from before LISBITE.com.</p>
+      <span class="marker-button disabled">Scratch</span>
+    </article>
+
+    <article class="paper pink-note">
+      <h2>Roblox</h2>
+      <p>Older Roblox work from before LISBITE.com.</p>
+      <span class="marker-button disabled">Roblox</span>
+    </article>
+  </section>
+
+  <div class="footer-mark"><a href="/">← back to the main wall</a></div>
+</main>
+<script src="/script.js"></script>
 </body>
 </html>
